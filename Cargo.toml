@@ -1,0 +1,22 @@
+[package]
+name = "mem_prefetch"
+version = "0.1.0"
+edition = "2024"
+
+authors = ["vdrn <valinion@gmail.com>"]
+license = "Unlicense"
+description = "mem_prefetch provides a simple platform agnostic wrapper for memory prefetching."
+homepage = "https://github.com/vdrn/mem_prefetch"
+repository = "https://github.com/vdrn/mem_prefetch"
+readme = "readme.md"
+keywords = ["prefetch", "cache", "intrinsic"]
+
+[features]
+default = ["fallback"]
+# Uses  llvm intrinsics from `core_intrinsics` for prefetching
+nightly = []
+# Uses `ptr::read_volatile` for preteching if no prefetch instruction is available.
+fallback = []
+
+[dependencies]
+cfg-if = "1"
