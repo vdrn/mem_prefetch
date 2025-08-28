@@ -1,3 +1,4 @@
+#![doc = include_str!("../readme.md")]
 #![allow(internal_features)]
 #![allow(unused)]
 #![cfg_attr(feature = "nightly", feature(core_intrinsics))]
