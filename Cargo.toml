@@ -10,6 +10,7 @@ homepage = "https://github.com/vdrn/mem_prefetch"
 repository = "https://github.com/vdrn/mem_prefetch"
 readme = "readme.md"
 keywords = ["prefetch", "cache", "intrinsic"]
+categories = ["hardware-support"]
 
 [features]
 default = ["fallback"]
